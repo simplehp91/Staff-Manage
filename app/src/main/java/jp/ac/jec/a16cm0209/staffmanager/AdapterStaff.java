@@ -124,6 +124,7 @@ public class AdapterStaff extends BaseAdapter {
         database.delete("staff", "ID = ?", new String[]{idStaff + ""});
 
         Cursor cursor = database.rawQuery("SELECT * FROM staff", null);
+        	list.clear();
         while (cursor.moveToNext()) {
             int id = cursor.getInt(0);
             String name = cursor.getString(1);
