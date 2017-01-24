@@ -1,1 +1,1 @@
-# Staff-Manage
+Demo android application Staff Manager
